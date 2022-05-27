@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+
+  get("/", { :controller => "user_authentication", :action => "index" })
+  # USERS 
+
+  get("/users", { :controller => "user_authentication", :action => "index" })
+
+  get("/users/:path_id", { :controller => "user_authentication", :action => "show" })
+  
   # Routes for the Comment resource:
 
   # CREATE
